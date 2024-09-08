@@ -14,7 +14,12 @@ Para ilustrar el uso del framework Spring, y el ambiente de desarrollo para el u
 
 	* GrammarChecker será un bean, que tiene como dependencia algo de tipo 'SpellChecker'.
 	* EnglishSpellChecker y SpanishSpellChecker son los dos posibles candidatos a ser inyectados. Se debe seleccionar uno, u otro, mas NO ambos (habría conflicto de resolución de dependencias). Por ahora haga que se use EnglishSpellChecker.
- 
+ * 
+ ![image](https://github.com/user-attachments/assets/2d4fc14e-f471-4575-a8cd-5d9c1b10fcf6)
+![image](https://github.com/user-attachments/assets/14c855f0-269e-4a31-b977-0541c6f8bc4b)
+![image](https://github.com/user-attachments/assets/abffe8ed-0988-472d-bc41-99ef94f894b5)
+
+
 5.	Haga un programa de prueba, donde se cree una instancia de GrammarChecker mediante Spring, y se haga uso de la misma:
 
 	```java
@@ -24,5 +29,12 @@ Para ilustrar el uso del framework Spring, y el ambiente de desarrollo para el u
 		System.out.println(gc.check("la la la "));
 	}
 	```
+![image](https://github.com/user-attachments/assets/6f946cb7-5525-48cd-8e18-5c1068500594)
 	
 6.	Modifique la configuración con anotaciones para que el Bean ‘GrammarChecker‘ ahora haga uso del  la clase SpanishSpellChecker (para que a GrammarChecker se le inyecte EnglishSpellChecker en lugar de  SpanishSpellChecker. Verifique el nuevo resultado.
+
+   ![image](https://github.com/user-attachments/assets/7417e06e-7047-4d79-bdee-d5e693a91ecd)
+   ![image](https://github.com/user-attachments/assets/d5f0c814-8ec4-4ee1-ab2d-67a64bd06a8a)
+   ![image](https://github.com/user-attachments/assets/848fcf97-aaf8-4a7b-9bf9-3b38568cde54)
+   ![image](https://github.com/user-attachments/assets/e764f42e-4f4e-40f9-80cb-bf83ccbad430)
+
