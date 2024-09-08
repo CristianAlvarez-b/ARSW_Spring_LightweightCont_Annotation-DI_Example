@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-@Service
+@Service("spanishSpellChecker")
 public class SpanishSpellChecker implements SpellChecker {
 
 	@Override
